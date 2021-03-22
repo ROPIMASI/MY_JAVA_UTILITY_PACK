@@ -20,7 +20,6 @@
  * and effects when used.
 *************************************************************************** ***/
 
-// Coding: utf-8
 
 // Project's package
 package myutility;

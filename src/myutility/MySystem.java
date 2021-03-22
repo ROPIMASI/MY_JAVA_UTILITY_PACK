@@ -22,7 +22,6 @@
 
 // ### REVISAR PARA PROXIMA VERSAO: CONSTRUIR EM  HASHMAP()...
 
-// Coding: utf-8
 
 // Project's package
 package myutility;
