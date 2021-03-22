@@ -23,7 +23,7 @@
 
 
 // Project's package
-package myutility;
+package myutility.screenprinter;
 
 
 

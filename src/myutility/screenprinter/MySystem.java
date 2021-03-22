@@ -24,7 +24,7 @@
 
 
 // Project's package
-package myutility;
+package myutility.screenprinter;
 
 //Java's imports
 //import java.util.List;
