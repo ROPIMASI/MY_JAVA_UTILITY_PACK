@@ -23,7 +23,7 @@
 
 
 // Project's package
-package myutility.screenprinter;
+package dev.ronaldomarques.myutility.screenprinter;
 
 
 

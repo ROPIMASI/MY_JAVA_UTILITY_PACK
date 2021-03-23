@@ -17,10 +17,10 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package myutility.tester;
+package dev.ronaldomarques.myutility.tester;
 
 
-import myutility.screenprinter.MyUtility;
+import dev.ronaldomarques.myutility.screenprinter.MyUtility;
 
 
 

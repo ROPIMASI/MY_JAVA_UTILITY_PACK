@@ -17,7 +17,7 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package myutility.logger;
+package dev.ronaldomarques.myutility.debugger;
 
 /* IMPORTS */
 
@@ -34,6 +34,6 @@ package myutility.logger;
  * @language       JAVA-11.
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
  */
-public class Logger {
+public class Debugger {
 	
 }
