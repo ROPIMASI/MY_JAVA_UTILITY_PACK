@@ -15,17 +15,45 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.myutility.debugger;
+package dev.ronaldomarques.tester;
+
+
+import dev.ronaldomarques.myutility.screenprinter.SP;
+
+
 
 /**
  * @author         Ronaldo Marques.
  * @since          20190501.
- * @version        20210322.
- * @category       LibClass: class which implements several resources, such as constants, properties, methods, data structure to be used as a library in others projects. 
+ * @version        20210323.
+ * @category       TesterClass: class used to perform implementation tests.
  * @analysis       ...
  * @language       JAVA-11.
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
  */
-public class Debugger {
+public class Tester {
+	
+	public static void main(String[] args) {
+		
+		
+		SP.dpln("teste itdp 1");
+		
+		SP.dpOff();
+		
+		SP.dpln("teste itdp 2");
+		
+		SP.dpOn();
+		
+		SP.dpln("teste itdp 3");
+		
+		SP.dpOff();
+		
+		SP.dpln("teste itdp 4");
+		
+		SP.dpOn();
+		
+		SP.dpln("teste itdp 5");
+		
+	}
 	
 }

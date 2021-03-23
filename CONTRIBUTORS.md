@@ -1,4 +1,4 @@
-# CONTRIBUTORS TO MY_UTILITY_PACK
+# CONTRIBUTORS TO MY UTILITY PACK
 List of contributors to this open project.  
   
  &nbsp;  

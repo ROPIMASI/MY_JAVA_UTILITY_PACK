@@ -21,102 +21,91 @@ package dev.ronaldomarques.myutility.screenprinter;
 /**
  * @author         Ronaldo Marques.
  * @since          20190501.
- * @version        20210322.
+ * @version        20210323.
  * @category       LibClass: class which implements several resources, such as constants, properties, methods, data
  *                 structure to be used as a library in others projects.
  * @analysis       ...
  * @language       JAVA-11.
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
  */
-public class MySystem {
+public class SP {
 	
-	public static class ExceptObj {
+	/* If True Debug Print ( i t d p ) */
+	private static boolean itdp = true;
+	
+	static {
+		SP.itdp = true;
+	}
+	
+	
+	
+	public SP() {
 		
-		Exception e;
+		super();
+		SP.itdp = true;
 		
 	}
 	
 	
 	
-	public static void sleep(long miliseconds, short times, char sepChar, ExceptObj refExcept) {
+	/* FURTHER: Constructor com parâmetro que diz qual será o caminho do arquivo/property com o valor true/false para
+	 * o método .itdp(); */
+	public SP(String propertiesFilePath) {
 		
-		try {
-			
-			for (int i = 0; i < times; i++) {
-				Thread.sleep(miliseconds);
-				System.out.print(sepChar);
-			}
-			
-			System.out.println();
-		}
-		catch (Exception except) {
-			refExcept = new ExceptObj();
-			refExcept.e = except;
-		}
+		super();
+		
+		/* FURTHER: constructor com 1 arg, path para o arquivo .properties da aplicação-usuária desta LIB.
+		 * Este path deve ser os pacotes ou pastas ???
+		 * tem com esta lib pegar a root da aplicação ??? pasta ou pacote root, para então acessar o arquivo
+		 * .properties com o argumento passado e lê-lo
+		 * filePropertiesPath example: br.com.zup.itianalyser.meta-inf ???
+		 * MY_UTILITY_PACK/src/dev/ronaldomarques/myutility/META-INF/myutility.properties ? */
+		// SP.itdp = true; // ler do .properties: myutility.screen-printer.itdp
 		
 	}
 	
 	
 	
-	public static void sleep(long miliseconds, short times, char sepChar) {
+	/* TEMPORARILY: Constructor com parâmetro que diz true/false para o método .itdp(); Enquanto outra forma não for
+	 * desenvolvida como no constructor acima, com 1 argumento. */
+	public SP(boolean itdp) {
 		
-		try {
-			
-			for (int i = 0; i < times; i++) {
-				Thread.sleep(miliseconds);
-				System.out.print(sepChar);
-			}
-			
-			System.out.println();
-		}
-		catch (Exception except) {
-			System.out.println("Erro! [" + except + "]");
-		}
+		super();
+		// SP.itdp = itdp;
 		
 	}
 	
 	
 	
-	public static void sleep(long miliseconds, short times) {
+	public static void dpOn() {
 		
-		try {
-			
-			for (int i = 0; i < times; i++) { Thread.sleep(miliseconds); }
-			
-		}
-		catch (Exception except) {
-			System.out.println("Erro! [" + except + "]");
-		}
+		SP.itdp = true;
 		
 	}
 	
 	
 	
-	public static void sleep(long miliseconds) {
+	public static void dpOff() {
 		
-		try {
-			
-			for (int i = 0; i < 3; i++) { Thread.sleep(miliseconds); }
-			
-		}
-		catch (Exception except) {
-			System.out.println("Erro! [" + except + "]");
-		}
+		SP.itdp = false;
 		
 	}
 	
 	
 	
-	public static void sleep() {
+	/* Print on console whether the static variable itdp in this class is true. */
+	public static void dp(String str) {
 		
-		try {
-			
-			for (int i = 0; i < 3; i++) { Thread.sleep(1000); }
-			
-		}
-		catch (Exception except) {
-			System.out.println("Erro! [" + except + "]");
-		}
+		if (SP.itdp) System.out.printf("[DEBUG => %s]", str);
+		
+	}
+	
+	
+	
+	/* PrintLN on console whether the static variable itdp in this class is true. */
+	public static void dpln(String str) {
+		
+		if (SP.itdp) System.out.printf("[DEBUG => %s]\n", str);
 		
 	}
 	

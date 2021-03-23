@@ -3,8 +3,7 @@
  * Este arquivo é parte integrante, indivisível, inseparável de um projeto particular, o qual tem seu uso e fruto
  * expressamente exclusivo à seu autor, Ronaldo Marques (ronaldomarques@email.com / http://ronaldomarques.dev);
  * É vetado qualquer utilização, venda, aluguél, distribuição, em partes ou integral deste projeto;
- * Este projeto tem finalidade exclusiva de demonstração de conhecimento e habilidades no desenvolvimento de software
- * para apresentação no processo de recrutamento da empresa Dryve.com.br;
+ * Este projeto tem finalidade exclusiva de demonstração de conhecimento e habilidades no desenvolvimento de software;
  * Sendo assim, o autor deste projeto não reconhece nem assume qualquer responsabilidade pela utilização do mesmo,
  * tão pouco por qualquer possível reflexos ou consequência de tal utilização.
  * ---
@@ -12,12 +11,11 @@
  * This file is an integral, indivisible, inseparable part of a particular project, which has its use expressly
  * exclusive to its author, Ronaldo Marques (ronaldomarques@email.com / http://ronaldomarques.dev);
  * Any use, sale, rental, distribution, in parts or integral of this project is prohibited;
- * This project has the sole purpose of demonstrating knowledge and skills in software development
- * for presentation in the recruitment process of Dryve.com.br;
+ * This project has the sole purpose of demonstrating knowledge and skills in software development;
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.myutility.screenprinter;
+package dev.ronaldomarques.myutility;
 
 
 import java.util.Scanner;
@@ -40,9 +38,27 @@ public class MyUtility {
 	
 	
 	
-	public static final String name() {
+	public MyUtility() {
 		
-		return "MyUtility";
+		super();
+		
+	}
+	
+	
+	
+	public static final String projectName() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "MY UTILITY PACK";
+		
+	}
+	
+	
+	
+	public static final String libraryName() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "SP";
 		
 	}
 	
@@ -50,11 +66,10 @@ public class MyUtility {
 	
 	public static final String version() {
 		
-		return "v 0.4.beta";
+		/* FURTHER: Get the value in myutility.properties. */
+		return "v 0.4.0-dev";
 		
 	}
-	
-	// --- --- ---
 	
 	
 	
@@ -72,11 +87,9 @@ public class MyUtility {
 		
 	}
 	
-	// --- --- ---
 	
 	
-	
-	public static final void printxy(String msg, short x, short y) {
+	public static final void printXY(String msg, short x, short y) {
 		
 		positionLC(y, x);
 		System.out.printf("%s", msg);
@@ -85,18 +98,16 @@ public class MyUtility {
 	
 	
 	
-	public static final void printlnxy(String msg, short x, short y) {
+	public static final void printlnXY(String msg, short x, short y) {
 		
 		positionLC(y, x);
 		System.out.printf("%s\n", msg);
 		
 	}
 	
-	// --- --- ---
 	
 	
-	
-	public static final void printc(String msg, String... argsList) {
+	public static final void printC(String msg, String... argsList) {
 		
 		String cmd = "";
 		
@@ -110,7 +121,7 @@ public class MyUtility {
 	
 	
 	
-	public static final void printlnc(String msg, String... argsList) {
+	public static final void printlnC(String msg, String... argsList) {
 		
 		String cmd = "";
 		
@@ -122,11 +133,9 @@ public class MyUtility {
 		
 	}
 	
-	// --- --- ---
 	
 	
-	
-	public static final void printxyc(String msg, short x, short y, String... argsList) {
+	public static final void printXYC(String msg, short x, short y, String... argsList) {
 		
 		String cmd = "";
 		
@@ -141,7 +150,7 @@ public class MyUtility {
 	
 	
 	
-	public static final void printlnxyc(String msg, short x, short y, String... argsList) {
+	public static final void printlnXYC(String msg, short x, short y, String... argsList) {
 		
 		String cmd = "";
 		
@@ -153,8 +162,6 @@ public class MyUtility {
 		System.out.printf("%s%s%s", "\033[" + cmd, msg, "\033[0m");
 		
 	}
-	
-	// --- --- ---
 	
 	
 	
@@ -166,13 +173,11 @@ public class MyUtility {
 	
 	
 	
-	public static void conClear() {
+	public static void clearConsole() {
 		
 		System.out.printf("\033[2J");
 		
 	}
-	
-	// --- --- ---
 	
 	
 	
