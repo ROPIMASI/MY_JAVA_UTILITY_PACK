@@ -23,36 +23,37 @@ import dev.ronaldomarques.myutility.screenprinter.SP;
 
 
 /**
- * @author         Ronaldo Marques.
- * @since          20190501.
- * @version        20210323.
- * @category       TesterClass: class used to perform implementation tests.
+ * @author         Ronaldo Marques;
+ * @since          20190501;
+ * @last_change    20210323;
+ * @version        0.4.0;
+ * @category       TesterClass: class used to perform implementation tests;
+ * @language       JAVA-11;
+ * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
- * @language       JAVA-11.
- * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
  */
 public class Tester {
 	
 	public static void main(String[] args) {
 		
 		
-		SP.dpln("teste itdp 1");
+		SP.pdln("teste itpd 1");
 		
-		SP.dpOff();
+		SP.pdOff();
 		
-		SP.dpln("teste itdp 2");
+		SP.pdln("teste itpd 2");
 		
-		SP.dpOn();
+		SP.pdOn();
 		
-		SP.dpln("teste itdp 3");
+		SP.pdln("teste itpd 3");
 		
-		SP.dpOff();
+		SP.pdOff();
 		
-		SP.dpln("teste itdp 4");
+		SP.pdln("teste itpd 4");
 		
-		SP.dpOn();
+		SP.pdOn();
 		
-		SP.dpln("teste itdp 5");
+		SP.pdln("teste itpd 5");
 		
 	}
 	

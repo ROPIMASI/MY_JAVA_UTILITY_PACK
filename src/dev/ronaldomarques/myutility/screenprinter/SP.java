@@ -19,22 +19,23 @@ package dev.ronaldomarques.myutility.screenprinter;
 
 
 /**
- * @author         Ronaldo Marques.
- * @since          20190501.
- * @version        20210323.
+ * @author         Ronaldo Marques;
+ * @since          20190501;
+ * @last_change    20210323;
+ * @version        0.4.0;
  * @category       LibClass: class which implements several resources, such as constants, properties, methods, data
- *                 structure to be used as a library in others projects.
+ *                 structure to be used as a library in others projects;
+ * @language       JAVA-11;
+ * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
- * @language       JAVA-11.
- * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
  */
 public class SP {
 	
-	/* If True Debug Print ( i t d p ) */
-	private static boolean itdp = true;
+	/* If True Print Debug ( i t p d ) */
+	private static boolean itpd = true;
 	
 	static {
-		SP.itdp = true;
+		SP.itpd = true;
 	}
 	
 	
@@ -42,14 +43,14 @@ public class SP {
 	public SP() {
 		
 		super();
-		SP.itdp = true;
+		SP.itpd = true;
 		
 	}
 	
 	
 	
 	/* FURTHER: Constructor com parâmetro que diz qual será o caminho do arquivo/property com o valor true/false para
-	 * o método .itdp(); */
+	 * o método .itpd(); */
 	public SP(String propertiesFilePath) {
 		
 		super();
@@ -60,52 +61,52 @@ public class SP {
 		 * .properties com o argumento passado e lê-lo
 		 * filePropertiesPath example: br.com.zup.itianalyser.meta-inf ???
 		 * MY_UTILITY_PACK/src/dev/ronaldomarques/myutility/META-INF/myutility.properties ? */
-		// SP.itdp = true; // ler do .properties: myutility.screen-printer.itdp
+		// SP.itpd = true; // ler do .properties: myutility.screen-printer.itpd
 		
 	}
 	
 	
 	
-	/* TEMPORARILY: Constructor com parâmetro que diz true/false para o método .itdp(); Enquanto outra forma não for
+	/* TEMPORARILY: Constructor com parâmetro que diz true/false para o método .itpd(); Enquanto outra forma não for
 	 * desenvolvida como no constructor acima, com 1 argumento. */
-	public SP(boolean itdp) {
+	public SP(boolean itpd) {
 		
 		super();
-		// SP.itdp = itdp;
+		// SP.itpd = itpd;
 		
 	}
 	
 	
 	
-	public static void dpOn() {
+	public static void pdOn() {
 		
-		SP.itdp = true;
-		
-	}
-	
-	
-	
-	public static void dpOff() {
-		
-		SP.itdp = false;
+		SP.itpd = true;
 		
 	}
 	
 	
 	
-	/* Print on console whether the static variable itdp in this class is true. */
-	public static void dp(String str) {
+	public static void pdOff() {
 		
-		if (SP.itdp) System.out.printf("[DEBUG => %s]", str);
+		SP.itpd = false;
 		
 	}
 	
 	
 	
-	/* PrintLN on console whether the static variable itdp in this class is true. */
-	public static void dpln(String str) {
+	/* Print on console whether the static variable itpd in this class is true. */
+	public static void pd(String str) {
 		
-		if (SP.itdp) System.out.printf("[DEBUG => %s]\n", str);
+		if (SP.itpd) System.out.printf("[DEBUG => %s]", str);
+		
+	}
+	
+	
+	
+	/* PrintLN on console whether the static variable itpd in this class is true. */
+	public static void pdln(String str) {
+		
+		if (SP.itpd) System.out.printf("[DEBUG => %s]\n", str);
 		
 	}
 	

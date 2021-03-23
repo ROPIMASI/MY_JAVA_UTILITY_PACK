@@ -19,14 +19,15 @@ package dev.ronaldomarques.myutility.screenprinter;
 
 
 /**
- * @author         Ronaldo Marques.
- * @since          20190501.
- * @version        20210322.
+ * @author         Ronaldo Marques;
+ * @since          20190501;
+ * @last_change    20210323;
+ * @version        0.4.0;
  * @category       LibClass: class which implements several resources, such as constants, properties, methods, data
- *                 structure to be used as a library in others projects.
+ *                 structure to be used as a library in others projects;
+ * @language       JAVA-11;
+ * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
- * @language       JAVA-11.
- * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
  */
 public class MySystem {
 	
