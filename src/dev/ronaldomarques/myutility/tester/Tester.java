@@ -28,10 +28,7 @@ import dev.ronaldomarques.myutility.screenprinter.MyUtility;
  * @author         Ronaldo Marques.
  * @since          20190501.
  * @version        20210322.
- * @category       TESTER: Classe especializada em receber as requisições de clientes, processar dados preliminares
- *                 (mínimo possível seguindo pricípios de "SOLID"), delegar o processamento principal às respectivas
- *                 classes
- *                 de regras de negócio do domínio, e ou de serviços, e então enviar respostas ao cliente-requisitante.
+ * @category       TesterClass: class used to perform implementation tests.
  * @analysis       ...
  * @language       JAVA-11.
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.

@@ -1,110 +1,125 @@
-/*** ***************************************************************************
- * CONTENT: MYUTILITYS PROJECT (ITJDP-MU-b0.2)
- * THEME: LIBRARY OF JAVA UTILITYS.
- * AUTHOR: RONALDO PI MA SI.
- * DATE: 2019-JULY.
- * LANGUAGE: JAVA 8.
- * PLATAFORM: Microsoft Windows7, JDK 8.0.212, Eclipse IDE for Enterprise Java_
- * 		_Developers, version 2019-03.
- *
- * NOTA IMPORTANTE / ISEN��O DE RESPONSABILIDADE:
- * Este � um projeto pessoal, particular, de uso e fruto �nico e exclusivamente
- * de seu autor. Trata-se de um projeto em faze de desenvovimento e experimenta-
- * -��es. O qual n�o tem nenhuma responsabilidade pelas informa��es nele conti-
- * -das, t�o pouco sobre seus resultados e efeitos ao ser utilizado. 
- * 
- * IMPORTANT NOTE / DISCLAIMER:
- * This is a personal project, private, for use and fruit solely and exclusively
- * by its author. It is a project in development and experimentation. Which has
- * no responsibility for the information contained therein, nor for its results
- * and effects when used.
-*************************************************************************** ***/
-
-// ### REVISAR PARA PROXIMA VERSAO: CONSTRUIR EM  HASHMAP()...
-
-
-// Project's package
+/**
+ * DIREITOS, LICENSA E ISENÇÃO DE RESPONSABILIDADE:
+ * Este arquivo é parte integrante, indivisível, inseparável de um projeto particular, o qual tem seu uso e fruto
+ * expressamente exclusivo à seu autor, Ronaldo Marques (ronaldomarques@email.com / http://ronaldomarques.dev);
+ * É vetado qualquer utilização, venda, aluguél, distribuição, em partes ou integral deste projeto;
+ * Este projeto tem finalidade exclusiva de demonstração de conhecimento e habilidades no desenvolvimento de software
+ * para apresentação no processo de recrutamento da empresa Dryve.com.br;
+ * Sendo assim, o autor deste projeto não reconhece nem assume qualquer responsabilidade pela utilização do mesmo,
+ * tão pouco por qualquer possível reflexos ou consequência de tal utilização.
+ * ---
+ * RIGHTS, LICENSE AND DISCLAIMER:
+ * This file is an integral, indivisible, inseparable part of a particular project, which has its use expressly
+ * exclusive to its author, Ronaldo Marques (ronaldomarques@email.com / http://ronaldomarques.dev);
+ * Any use, sale, rental, distribution, in parts or integral of this project is prohibited;
+ * This project has the sole purpose of demonstrating knowledge and skills in software development
+ * for presentation in the recruitment process of Dryve.com.br;
+ * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
+ * neither for any possible reflexes or consequence of such use.
+ */
 package dev.ronaldomarques.myutility.screenprinter;
 
-//Java's imports
-//import java.util.List;
-//import java.util.ArrayList;
-//import java.io.FileWriter;
-//import java.io.PrintWriter;
-//import java.io.IOException;
 
-//Project's imports
-
-
-
+/**
+ * @author         Ronaldo Marques.
+ * @since          20190501.
+ * @version        20210322.
+ * @category       LibClass: class which implements several resources, such as constants, properties, methods, data
+ *                 structure to be used as a library in others projects.
+ * @analysis       ...
+ * @language       JAVA-11.
+ * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.
+ */
 public class MySystem {
 	
 	public static class ExceptObj {
+		
 		Exception e;
+		
 	}
 	
 	
 	
 	public static void sleep(long miliseconds, short times, char sepChar, ExceptObj refExcept) {
+		
 		try {
-			for (int i=0; i<times; i++) {
+			
+			for (int i = 0; i < times; i++) {
 				Thread.sleep(miliseconds);
 				System.out.print(sepChar);
 			}
+			
 			System.out.println();
-		} catch (Exception except) {
+		}
+		catch (Exception except) {
 			refExcept = new ExceptObj();
 			refExcept.e = except;
 		}
+		
 	}
 	
 	
 	
 	public static void sleep(long miliseconds, short times, char sepChar) {
+		
 		try {
-			for (int i=0; i<times; i++) {
+			
+			for (int i = 0; i < times; i++) {
 				Thread.sleep(miliseconds);
 				System.out.print(sepChar);
 			}
+			
 			System.out.println();
-		} catch (Exception except) {
+		}
+		catch (Exception except) {
 			System.out.println("Erro! [" + except + "]");
 		}
+		
 	}
 	
 	
 	
 	public static void sleep(long miliseconds, short times) {
+		
 		try {
-			for (int i=0; i<times; i++) {
-				Thread.sleep(miliseconds);
-			}
-		} catch (Exception except) {
+			
+			for (int i = 0; i < times; i++) { Thread.sleep(miliseconds); }
+			
+		}
+		catch (Exception except) {
 			System.out.println("Erro! [" + except + "]");
 		}
-	}	
+		
+	}
 	
 	
 	
 	public static void sleep(long miliseconds) {
+		
 		try {
-			for (int i=0; i<3; i++) {
-				Thread.sleep(miliseconds);
-			}
-		} catch (Exception except) {
+			
+			for (int i = 0; i < 3; i++) { Thread.sleep(miliseconds); }
+			
+		}
+		catch (Exception except) {
 			System.out.println("Erro! [" + except + "]");
 		}
+		
 	}
 	
 	
 	
 	public static void sleep() {
+		
 		try {
-			for (int i=0; i<3; i++) {
-				Thread.sleep(1000);
-			}
-		} catch (Exception except) {
+			
+			for (int i = 0; i < 3; i++) { Thread.sleep(1000); }
+			
+		}
+		catch (Exception except) {
 			System.out.println("Erro! [" + except + "]");
 		}
-	}	
-} // MySystem ends here.
+		
+	}
+	
+}
