@@ -1,13 +1,12 @@
-Manifest-Version: 1.0
+Manifest-Version: 1.1
 
 Name: dev/ronaldomarques/dev/ronaldomarques/myutility/
 Sealed: true
 
-Specification-Title: "My Java Utility Classes"
+Specification-Title: "MY JAVA UTILITY PACK"
 Specification-Version: 1.7
 Specification-Vendor: "ROPIMASI, INC."
 Implementation-Title: dev.ronaldomarques.myutility
 Implementation-Version: 0.4.0
 Implementation-Vendor: "ROPIMASI, INC."
 Class-Path: "/.classpath"
-Main-Class: dev.ronaldomarques.myutility.MyUtility.class
