@@ -18,14 +18,14 @@
 package dev.ronaldomarques.tester;
 
 
-import dev.ronaldomarques.myutility.screenprinter.SP;
+import dev.ronaldomarques.myutility.debugger.DP;
 
 
 
 /**
  * @author         Ronaldo Marques;
  * @since          20190501;
- * @last_change    20210323;
+ * @last_change    20210324;
  * @version        0.4.0;
  * @category       TesterClass: class used to perform implementation tests;
  * @language       JAVA-11;
@@ -36,24 +36,23 @@ public class Tester {
 	
 	public static void main(String[] args) {
 		
+		DP.pdln("teste itpd 1");
 		
-		SP.pdln("teste itpd 1");
+		DP.pdOff();
 		
-		SP.pdOff();
+		DP.pdln("teste itpd 2");
 		
-		SP.pdln("teste itpd 2");
+		DP.pdOn();
 		
-		SP.pdOn();
+		DP.pdln("teste itpd 3");
 		
-		SP.pdln("teste itpd 3");
+		DP.pdOff();
 		
-		SP.pdOff();
+		DP.pdln("teste itpd 4");
 		
-		SP.pdln("teste itpd 4");
+		DP.pdOn();
 		
-		SP.pdOn();
-		
-		SP.pdln("teste itpd 5");
+		DP.pdln("teste itpd 5");
 		
 	}
 	

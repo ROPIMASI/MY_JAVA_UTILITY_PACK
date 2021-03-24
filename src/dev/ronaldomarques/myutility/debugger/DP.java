@@ -15,7 +15,7 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.myutility;
+package dev.ronaldomarques.myutility.debugger;
 
 
 /**
@@ -29,39 +29,84 @@ package dev.ronaldomarques.myutility;
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
  */
-public class MyUtility {
+public class DP {// Debug Printer = DP.
 	
-	public MyUtility() {
+	/* If True Print Debug ( i t p d ) */
+	private static boolean itpd = true;
+	
+	static {
+		DP.itpd = true;
+	}
+	
+	
+	
+	public DP() {
+		
+		super();
+		DP.itpd = true;
+		
+	}
+	
+	
+	
+	/* FURTHER: Constructor com parâmetro que diz qual será o caminho do arquivo/property com o valor true/false para
+	 * o método .itpd(); */
+	public DP(String propertiesFilePath) {
 		
 		super();
 		
-	}
-	
-	
-	
-	/* TODO: self-presentation. */
-	public static final String projectName() {
-		
-		/* FURTHER: Get the value in myutility.properties. */
-		return "MY UTILITY PACK";
+		/* FURTHER: constructor com 1 arg, path para o arquivo .properties da aplicação-usuária desta LIB.
+		 * Este path deve ser os pacotes ou pastas ???
+		 * tem com esta lib pegar a root da aplicação ??? pasta ou pacote root, para então acessar o arquivo
+		 * .properties com o argumento passado e lê-lo
+		 * filePropertiesPath example: br.com.zup.itianalyser.meta-inf ???
+		 * MY_UTILITY_PACK/src/dev/ronaldomarques/myutility/META-INF/myutility.properties ? */
+		// DP.itpd = true; // ler do .properties: myutility.screen-printer.itpd
 		
 	}
 	
 	
 	
-	public static final String libraryName() {
+	/* TEMPORARILY: Constructor com parâmetro que diz true/false para o método .itpd(); Enquanto outra forma não for
+	 * desenvolvida como no constructor acima, com 1 argumento. */
+	public DP(boolean itpd) {
 		
-		/* FURTHER: Get the value in myutility.properties. */
-		return "DP";
+		super();
+		// DP.itpd = itpd;
 		
 	}
 	
 	
 	
-	public static final String version() {
+	public static void pdOn() {
 		
-		/* FURTHER: Get the value in myutility.properties. */
-		return "v 0.4.0-dev";
+		DP.itpd = true;
+		
+	}
+	
+	
+	
+	public static void pdOff() {
+		
+		DP.itpd = false;
+		
+	}
+	
+	
+	
+	/* Print on console whether the static variable itpd in this class is true. */
+	public static void pd(String str) {
+		
+		if (DP.itpd) System.out.printf("[DEBUG => %s]", str);
+		
+	}
+	
+	
+	
+	/* Print Line on console whether the static variable itpd in this class is true. */
+	public static void pdln(String str) {
+		
+		if (DP.itpd) System.out.printf("[DEBUG => %s]\n", str);
 		
 	}
 	

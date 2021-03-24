@@ -15,7 +15,7 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.myutility.screenprinter;
+package dev.ronaldomarques.myutility.logger;
 
 
 /**
@@ -29,85 +29,6 @@ package dev.ronaldomarques.myutility.screenprinter;
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
  */
-public class SP {
-	
-	/* If True Print Debug ( i t p d ) */
-	private static boolean itpd = true;
-	
-	static {
-		SP.itpd = true;
-	}
-	
-	
-	
-	public SP() {
-		
-		super();
-		SP.itpd = true;
-		
-	}
-	
-	
-	
-	/* FURTHER: Constructor com parâmetro que diz qual será o caminho do arquivo/property com o valor true/false para
-	 * o método .itpd(); */
-	public SP(String propertiesFilePath) {
-		
-		super();
-		
-		/* FURTHER: constructor com 1 arg, path para o arquivo .properties da aplicação-usuária desta LIB.
-		 * Este path deve ser os pacotes ou pastas ???
-		 * tem com esta lib pegar a root da aplicação ??? pasta ou pacote root, para então acessar o arquivo
-		 * .properties com o argumento passado e lê-lo
-		 * filePropertiesPath example: br.com.zup.itianalyser.meta-inf ???
-		 * MY_UTILITY_PACK/src/dev/ronaldomarques/myutility/META-INF/myutility.properties ? */
-		// SP.itpd = true; // ler do .properties: myutility.screen-printer.itpd
-		
-	}
-	
-	
-	
-	/* TEMPORARILY: Constructor com parâmetro que diz true/false para o método .itpd(); Enquanto outra forma não for
-	 * desenvolvida como no constructor acima, com 1 argumento. */
-	public SP(boolean itpd) {
-		
-		super();
-		// SP.itpd = itpd;
-		
-	}
-	
-	
-	
-	public static void pdOn() {
-		
-		SP.itpd = true;
-		
-	}
-	
-	
-	
-	public static void pdOff() {
-		
-		SP.itpd = false;
-		
-	}
-	
-	
-	
-	/* Print on console whether the static variable itpd in this class is true. */
-	public static void pd(String str) {
-		
-		if (SP.itpd) System.out.printf("[DEBUG => %s]", str);
-		
-	}
-	
-	
-	
-	/* PrintLN on console whether the static variable itpd in this class is true. */
-	public static void pdln(String str) {
-		
-		if (SP.itpd) System.out.printf("[DEBUG => %s]\n", str);
-		
-	}
+public class MyLogger {
 	
 }

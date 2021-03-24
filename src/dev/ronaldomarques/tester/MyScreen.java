@@ -15,7 +15,7 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.myutility.screenprinter;
+package dev.ronaldomarques.tester;
 
 
 import java.io.FileWriter;

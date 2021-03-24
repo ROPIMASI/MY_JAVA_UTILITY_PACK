@@ -1,6 +1,7 @@
 # MY JAVA UTILITY PACK
 My personal Java library of small tools for general purpose.  
 &nbsp;  
+&nbsp;  
 ## Table of contents
 * [Description](#description)
 * [@javadoc](#javadoc)
@@ -17,20 +18,20 @@ My personal Java library of small tools for general purpose.
 &nbsp;  
 <a name="description"></a>
 ## Description
-* SUBJECT:			Java library of small tools for general purpose;
-* PROJECT NAME:		My Java Utility Pack;
-* PROJECT ALIAS:	MyUtility.
+* SUBJECT:        Java library of small tools for general purpose;
+* PROJECT NAME:   My Java Utility Pack;
+* PROJECT ALIAS:  MyUtility.
 &nbsp;  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="javadoc"></a>
 ## @javadoc
-@author			Ronaldo Marques;  
-@since			20190501;  
-@last_change	20210323;  
-@version		0.4.0-alpha;  
-@category		JavaClassLib;  
+@author         Ronaldo Marques;  
+@since          20190501;  
+@last_change    20210324;  
+@version        0.4.0-alpha;  
+@category       JavaClassLib;  
 @language       JAVA-11;  
 @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;  
 &nbsp;  
@@ -58,19 +59,27 @@ Sendo assim, o autor deste projeto não reconhece nem assume qualquer responsabi
 <a name="versioning"></a>
 #### Versioning
 In a team project, it is very important to know and follow the specifications of the project version. Although at the moment MyUtility's status is under early development (as it has not its first release version yet 1.0.0-release) its project already is designed under [**SemVer** (Semantic Versioning Specification)](http://semver.org/).  
-Thus, MyUtility uses **_SemVer_** for its versioning. **SemVer** is a specification (set of rules) that tells (or dictates) us how to use the numbers (and some letters) on the _versioning-expression_ (VerExpr). More specifically, MyUtility uses the following standardization: _Major.Minor.Patch-ReleaseStatus+Build_.  
-The standard flags of _ReleaseStatus_ for the _VerExpr_ are as follows:
-* **_dev_**: in early development, usage not encouraged;
-* **_alpha_**: in development, first test phase, it's encouraged usage for **test only** by people involved with software development, at self-own risk;
-* **_beta_**: in pre-release version, general public usage is acceptable, however, **only for test**, usage is a choice at self-own risk;
-* **_release_**: release version; relatively stable in proportion to the effectiveness of the tests; bugs are possible to appear, so it would come back to a _hotfix-branch_ if needed.  
+Thus, MyUtility uses **_SemVer_** for its versioning. **SemVer** is a specification (set of rules) that tells (or dictates) us how to use the numbers (and some letters) on the _versioning-expression_ (VerExpr). More specifically, MyUtility uses the following standardization: _Major.Minor.Patch-ReleaseStatus+Build_, where:  
+* The standard values of _Major_, _Minor_, and _Patch_ for the _VerExpr_ are as follows:
+  + Positive integer decimal numbers, without zero remaining on the left;
+  + Major version represents wider changes in the project, which affects the main structure of the project, or its main objectives, or the last user API released;
+  + Minor version represents smaller changes in the project, which don't affect above itens, but affect the amount of the application fuatrures with a new one or more, or remove an existing feature previouslly released;
+  + Patch version represents specific changes which goals to fix or improve some feature, or undesired behavior in the application.  
+* The standard flags of _ReleaseStatus_ for the _VerExpr_ are as follows:
+  + **_dev_**: in early development, usage not encouraged;
+  + **_alpha_**: in development, first test phase, it's encouraged usage for **test only** by people involved with software development, at self-own risk;
+  + **_beta_**: in pre-release version, general public usage is acceptable, however, **only for test**, usage is a choice at self-own risk;
+  + **_release_**: release version; relatively stable in proportion to the effectiveness of the tests; bugs are possible to appear, so it would come back to a _hotfix-branch_ if needed.
+* The standard values of _Build_ for the _VerExpr_ are as follows:
+  + ...
+  + ...
+  + ...  
 &nbsp;  
 <a name="current"></a>
-#### Current Version 0.4.0-alpha
-* Feature 1;
-* Feature 2;
-* Feature 3;
-* Feature 4;
+#### Current Version 0.4.0-beta
+* Feature 1: Self-presentation about its name, alias, vesion, basic resouces, and how to access them;
+* Feature 2: If-True-Print-Debug, called by '.pd("");' method, prints on cosole the line '[DEBUG -=> arg_message]' where arg_message is a string argument passed by user, whether a boolean variable of control, called by 'itpd', is true;
+* Feature 3: ...;
 &nbsp;  
 <a name="changelog"></a>
 #### Changelog Previous Versions
@@ -81,23 +90,19 @@ The standard flags of _ReleaseStatus_ for the _VerExpr_ are as follows:
 <a name="roadmap"></a>
 #### Roadmap Future Versions
 ###### 0.5.0-beta
-* Feature 4;
-* Feature 5;
+* Feature 4: Provides one type of wrapper for java.util.Scanner Object and four methods for scanning 'int' entries and scanning 'string' entries, both capable of scanning by reading the first character block or entire line optionally;
+* Feature 5: ...;
 &nbsp;  
 ###### 0.6.0-beta
-* Feature 6;
-* Feature 7;
+* Feature 6: ...;
+* Feature 7: ...;
 &nbsp;  
 ###### 0.7.0-beta
-* Feature 8;
-* Feature 9;
-&nbsp;  
-###### 0.8.0-beta
-* Feature 10;
-* Feature 11;
+* Feature x: ...;
+* Feature y: ...;
 &nbsp;  
 ###### 1.0.0-release
-* Feature 12;
+* Feature z: ...;
 &nbsp;  
 &nbsp;  
 &nbsp;  

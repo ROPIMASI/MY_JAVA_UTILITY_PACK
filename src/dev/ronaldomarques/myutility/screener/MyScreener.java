@@ -15,7 +15,7 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.myutility.debugger;
+package dev.ronaldomarques.myutility.screener;
 
 
 /**
@@ -29,6 +29,6 @@ package dev.ronaldomarques.myutility.debugger;
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
  */
-public class Debugger {
+public class MyScreener {
 	
 }
