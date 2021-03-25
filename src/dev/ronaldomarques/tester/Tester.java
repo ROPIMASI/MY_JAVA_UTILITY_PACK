@@ -18,6 +18,7 @@
 package dev.ronaldomarques.tester;
 
 
+import dev.ronaldomarques.myutility.MyUtility;
 import dev.ronaldomarques.myutility.debugger.DP;
 
 
@@ -25,7 +26,7 @@ import dev.ronaldomarques.myutility.debugger.DP;
 /**
  * @author         Ronaldo Marques;
  * @since          20190501;
- * @last_change    20210324;
+ * @last_change    20210325;
  * @version        0.4.0;
  * @category       TesterClass: class used to perform implementation tests;
  * @language       JAVA-11;
@@ -53,6 +54,8 @@ public class Tester {
 		DP.pdOn();
 		
 		DP.pdln("teste itpd 5");
+		
+		MyUtility.selfPresentation();
 		
 	}
 	

@@ -21,7 +21,7 @@ package dev.ronaldomarques.myutility;
 /**
  * @author         Ronaldo Marques;
  * @since          20190501;
- * @last_change    20210324;
+ * @last_change    20210325;
  * @version        0.4.0;
  * @category       LibClass: class which implements several resources, such as constants, properties, methods, data
  *                 structure to be used as a library in others projects;
@@ -29,21 +29,13 @@ package dev.ronaldomarques.myutility;
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
  */
-public class MyUtility {
-	
-	public MyUtility() {
-		
-		super();
-		
-	}
-	
-	
+public abstract class MyUtility {
 	
 	/* TODO: self-presentation. */
 	public static final String projectName() {
 		
 		/* FURTHER: Get the value in myutility.properties. */
-		return "MY UTILITY PACK";
+		return "MY JAVA UTILITY PACK";
 		
 	}
 	
@@ -52,7 +44,7 @@ public class MyUtility {
 	public static final String libraryName() {
 		
 		/* FURTHER: Get the value in myutility.properties. */
-		return "DP";
+		return "MyUtility";
 		
 	}
 	
@@ -61,7 +53,19 @@ public class MyUtility {
 	public static final String version() {
 		
 		/* FURTHER: Get the value in myutility.properties. */
-		return "v 0.4.0-dev";
+		return "0.4.0-beta+202103250350";
+		
+	}
+	
+	
+	
+	public static final void selfPresentation() {
+		
+		System.out.printf("\n");
+		System.out.printf("Project name: %s\n", projectName());
+		System.out.printf("Library name: %s\n", libraryName());
+		System.out.printf("Version: %s\n", version());
+		System.out.printf("\n");
 		
 	}
 	

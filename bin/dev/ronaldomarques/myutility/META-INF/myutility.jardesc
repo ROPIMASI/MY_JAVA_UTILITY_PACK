@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <jardesc>
-    <jar path="C:/Users/ropim/_OPUS/INFORMATION_TECHNOLOGY/_shared-dependencies-jars/my-java-utility-pack-0.4.0-beta.jar"/>
+    <jar path="C:/Users/ropim/_OPUS/INFORMATION_TECHNOLOGY/_shared-dependencies-jars/my-java-utility-pack-0.4.0-beta+202103250350.jar"/>
     <options buildIfNeeded="true" compress="false" descriptionLocation="/MY_JAVA_UTILITY_PACK/src/dev/ronaldomarques/myutility/META-INF/myutility.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>

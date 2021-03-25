@@ -21,7 +21,7 @@ package dev.ronaldomarques.myutility.debugger;
 /**
  * @author         Ronaldo Marques;
  * @since          20190501;
- * @last_change    20210324;
+ * @last_change    20210325;
  * @version        0.4.0;
  * @category       LibClass: class which implements several resources, such as constants, properties, methods, data
  *                 structure to be used as a library in others projects;
@@ -29,7 +29,7 @@ package dev.ronaldomarques.myutility.debugger;
  * @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03;
  * @analysis       ...
  */
-public class DP {// Debug Printer = DP.
+public abstract class DP {// Debug Printer = DP.
 	
 	/* If True Print Debug ( i t p d ) */
 	private static boolean itpd = true;
