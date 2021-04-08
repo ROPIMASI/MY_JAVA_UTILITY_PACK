@@ -11,12 +11,12 @@ My personal Java library of small tools for general purpose.
 * [Description](#description)
 * [RIGHTS, LICENSE AND DISCLAIMER](#rights)
 * [DIREITOS, LICENSA E ISENÇÃO DE RESPONSABILIDADE](#direitos)
-* [Versions](#versions)
+* [VERSIONS](#versions)
   + [Versioning](#versioning)
   + [Current Version](#current)
   + [Previous Versions and Changelog](#previous)
   + [Future Versions and Roadmap](#future)
-* [Author](#author)
+* [AUTHOR](#author)
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -48,6 +48,7 @@ Sendo assim, o autor deste projeto não reconhece nem assume qualquer responsabi
 
 <a name="versions"></a>
 ## VERSIONS
+
 <a name="versioning"></a>
 ### VERSIONING GUIDELINES
 In a team project, it is very important to know and follow the specifications of the project version. Although at the moment MyUtility's status is under early development (as it has not its first release version yet 1.0.0-release) its project already is designed under [**_SemVer_** (Semantic Versioning Specification)](http://semver.org/).  
@@ -76,8 +77,9 @@ Thus, MyUtility uses **_SemVer_** for its versioning. **_SemVer_** is a specific
 > (* 1) The numerical sequence _Build_ necessarily refers to Greenwich Mean Time (GMT), also known as Coordinated Universal Time (UTC), or "Z time" or "Zulu time".  
   
 > Full example of **_Versioning-Expression_**: `1.2.3-release+202107301409`, meaning `1`._ ._ version fully implemented according to the project and its backlog; added by _ .`2`._ additionals features to the main version, according to the project backlog and its issues priorities in the **_SCRUM life cycle_**; added by _ ._ .`3` patches fixed in this mentioned lastest version following the **_GITFLOW life cycle_**, that means, it is a released version after passed by the tests in **_alpha_** and **_beta_** pre-releases; and finally, it was/would specifically build at the year 2021 month 07 (July) day 30 at 14:09h at UTC/GMT/Z-time/Zulu-time (14hours and 09minutes equal 2p.m and 09minutes in some idioms).  
+  
 &nbsp;  
-
+  
 <a name="current"></a>
 ### CURRENT VERSION 0.5.0-dev
 All the features of the previous version, plus:
@@ -88,6 +90,7 @@ All the features of the previous version, plus:
   + Scanning `String` typed entries;
     - reading the first characters block;
     - reading the entire line.  
+  
 &nbsp;  
   
 <a name="previous"></a>
@@ -97,7 +100,8 @@ All the features of the previous version, plus:
 ##### 0.3.0-beta, has no historic;
 ##### 0.4.0-beta, all the features of the previous version, plus:
 * Feature: Self-presentation about identification information of the project itself;
-* Feature: If-True-Print-Debug-Messages.
+* Feature: If-True-Print-Debug-Messages.  
+  
 &nbsp;  
   
 <a name="future"></a>
@@ -115,6 +119,7 @@ All the features of the previous version, plus:
 &nbsp;  
 
 <a name="author"></a>
-## Att. Ronaldo Marques.
+## AUTHORS
+#### Ronaldo Marques.
 ###### | https://ronaldomarques.dev | [linkedin @ronaldo marques](https://linkedin.com/in/ropimasi/) | [twitter @ropimasi](https://twitter.com/ropimasi/) | [insta @ropimasi](https://instagram.com/ropimasi/) | ronaldomarques@email.com |  
 &nbsp;  
