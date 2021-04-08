@@ -1,11 +1,14 @@
 # MY JAVA UTILITY PACK
 My personal Java library of small tools for general purpose.  
 &nbsp;  
+  
+*Started 201905010000-UTC/GMT/Z-time*  
+*Last change 202104080310-UTC/GMT/Z-time*  
+  
 &nbsp;  
-
-## TABLE OF CONTENTS
+  
+## LIST OF CONTENTS
 * [Description](#description)
-* [@javadoc](#javadoc)
 * [RIGHTS, LICENSE AND DISCLAIMER](#rights)
 * [DIREITOS, LICENSA E ISENÇÃO DE RESPONSABILIDADE](#direitos)
 * [Versions](#versions)
@@ -22,20 +25,7 @@ My personal Java library of small tools for general purpose.
 ## DESCRIPTION
 * SUBJECT:        Java library of small tools for general purpose;
 * PROJECT NAME:   My Java Utility Pack;
-* LIBRARY NAME:   MyUtility.
-&nbsp;  
-&nbsp;  
-&nbsp;  
-
-<a name="javadoc"></a>
-## @JAVADOC
-* @author         Ronaldo Marques;  
-* @since          20190501;  
-* @last_change    20210325;  
-* @version        0.4.0-beta;  
-* @category       JavaClassesLib;  
-* @language       JAVA-11;  
-* @dev_environmet Microsoft-Windows-10, REDHAT-OPEN-JDK-11.0.9, Eclipse-IDE-Enterprise-Java-Developers-v2020-03.  
+* PRODUCT NAME:   MyUtility.
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -89,33 +79,37 @@ Thus, MyUtility uses **_SemVer_** for its versioning. **_SemVer_** is a specific
 &nbsp;  
 
 <a name="current"></a>
-### CURRENT VERSION 0.4.0-beta
-* Feature 1: Self-presentation about its project name, library name, vesion;
-* Feature 2: If-True-Print-Debug calling the method `.pd("arg_message");` whether a boolean variable of control, `boolean itpd`, is true, so the method prints on console the line '[DEBUG -=> _arg_message_]' where _arg_message_ is a `String` typed argument passed by the user, otherwise the method does nothing;
+### CURRENT VERSION 0.5.0-dev
+All the features of the previous version, plus:
+* Feature: Provides one kind of wrapper for `java.util.Scanner` object with **four** methods for scanning entries from keyborad, at console;
+  + Scanning `int` typed entries;
+    - reading the first characters block;
+    - reading the entire line.
+  + Scanning `String` typed entries;
+    - reading the first characters block;
+    - reading the entire line.  
 &nbsp;  
-
+  
 <a name="previous"></a>
 ### PREVIOUS VERSIONS AND CHANGELOG
-###### 0.1.0 has no historic;
-###### 0.2.0 has no historic;
-###### 0.3.0 has no historic;
+##### 0.1.0-beta, has no historic;
+##### 0.2.0-beta, has no historic;
+##### 0.3.0-beta, has no historic;
+##### 0.4.0-beta, all the features of the previous version, plus:
+* Feature: Self-presentation about identification information of the project itself;
+* Feature: If-True-Print-Debug-Messages.
 &nbsp;  
-
+  
 <a name="future"></a>
 ### FUTURE VERSIONS AND ROADMAP
-##### 0.5.0-beta
-* Feature 3: Provides one type of wrapper for `java.util.Scanner` object and 4 methods for scanning `int` typed entries and scanning `String` typed entries, both capable of scanning by reading the first character block or entire line optionally;
-* Feature 4: ...;
+##### 0.6.0-beta, all the features of the previous version, plus:
+* Feature: _Feature-1_ refactored, now with basic resouces list;
 &nbsp;  
-##### 0.6.0-beta
-* Feature 5: _Feature-1_ refactored, now with basic resouces list;
-* Feature x: ...;
+##### 0.7.0-beta, all the features of the previous version, plus:
+* Feature: ...;
 &nbsp;  
-##### 0.7.0-beta
-* Feature y: ...;
-&nbsp;  
-##### 1.0.0-release
-* Feature z: ...;
+##### 1.0.0-release, all the features of the previous version, plus:
+* Feature: ...;
 &nbsp;  
 &nbsp;  
 &nbsp;  

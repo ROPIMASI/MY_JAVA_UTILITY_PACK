@@ -41,7 +41,16 @@ public abstract class MyUtility {
 	
 	
 	
-	public static final String libraryName() {
+	public static final String projectCategory() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "Class library development";
+		
+	}
+	
+	
+	
+	public static final String productName() {
 		
 		/* FURTHER: Get the value in myutility.properties. */
 		return "MyUtility";
@@ -50,10 +59,52 @@ public abstract class MyUtility {
 	
 	
 	
-	public static final String version() {
+	public static final String productVersion() {
 		
 		/* FURTHER: Get the value in myutility.properties. */
-		return "0.4.0-beta+202103250350";
+		return "0.5.0-dev+202104080257";
+		
+	}
+	
+	
+	
+	public static final String productDescription() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "My personal Java library of small tools for general purpose. Which main objective is demonstration of software development skills.";
+		
+	}
+	
+	
+	
+	public static final String authors() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "Ronaldo Marques";
+		
+	}
+	
+	
+	
+	public static final String contributors() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "";
+		
+	}
+	
+	
+	
+	public static final String evolvedTechnologies() {
+		
+		/* FURTHER: Get the value in myutility.properties. */
+		return "\n"
+				+ " - JAVA-11,\n"
+				+ " - REDHAT-OPEN-JDK-11.0.9,\n"
+				+ " - REDHAT-OPEN-JRE-11.0.9,\n"
+				+ " - Eclipse-IDE-Enterprise-Java-Developers-v2020-03,\n"
+				+ " - Eclipse-IDE-Spring-Tool-Suite-4-v4.10.0.R,\n"
+				+ " - Microsoft-Windows-10.";
 		
 	}
 	
@@ -62,9 +113,14 @@ public abstract class MyUtility {
 	public static final void selfPresentation() {
 		
 		System.out.printf("\n");
-		System.out.printf("Project name: %s\n", projectName());
-		System.out.printf("Library name: %s\n", libraryName());
-		System.out.printf("Version: %s\n", version());
+		System.out.printf("Project name: %s ;\n", projectName());
+		System.out.printf("Project category: %s ;\n", projectCategory());
+		System.out.printf("Product name: %s ;\n", productName());
+		System.out.printf("Product version: %s ;\n", productVersion());
+		System.out.printf("Product description: %s \n", productDescription());
+		System.out.printf("Authors: %s .\n", productDescription());
+		System.out.printf("Contributors: %s .\n", productDescription());
+		System.out.printf("Evolved technologies: %s \n", evolvedTechnologies());
 		System.out.printf("\n");
 		
 	}
